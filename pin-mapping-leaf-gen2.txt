@@ -1,0 +1,39 @@
+Connection diagram of CN001
+
++-----------------------------------+  +------------+
+| 47   46   21 20 19 18 17 16 15 14 |  |       x  x |
+|           29 28 27 26 25  x 23 22 |  |  6 x  x  x |
+| 49   48    x  x  x  x  x  x  x  x |  | 10 x  x  x |
+|           45 44 43 42 41 40 39 38 |  |    x  x  x |
++-----------------------------------+  +------------+
+
+- 6 = OUT_BRAKE
+- 10 = IN_BMS
+- 14 = CANH *
+- 15 = CANL *
+- 16 = IN_FORWARD
+- 17 = RES_S2 *
+- 18 = RES_S4 *
+- 19 = RES_R1 *
+- 20 = RES_S1 *
+- 21 = RES_S3 *
+- 22 = IN_START
+- 23 = IN_BRAKE
+- 25 = IN_REVERSE
+- 26 = 5V
+- 27 = RES_R2 (GND) *
+- 28 = THROTTLE2
+- 29 = THROTTLE1
+- 38 = IN_CRUISE
+- 39 = OUT_PWM
+- 40 = OUT_ERR
+- 41 = OUT_OVTG
+- 42 = OUT_DCSW * (! 12V input on original harness, make sure not to connect to 12V but to DC switch!)
+- 43 = OUT_PRE
+- 44 = MTEMP1 *
+- 45 = MTEMP2 *
+- 46 = 12V *
+- 47 = GND *
+- 48 = 12V *
+- 49 = GND *
+Only pins with * are populated on the OEM wire harness
