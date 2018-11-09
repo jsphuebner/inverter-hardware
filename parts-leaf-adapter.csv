@@ -1,19 +1,19 @@
 Name,Value,Part #
-C1,1µ
-C2,1µ
+C1,1µ,
+C2,1µ,
 CN001,,1939561-3 (unobtanium - salavage needed)
 CN101,,GT8E-5P-DS
 CN151,,GT8E-12DP-DS
 CN501,,GT8E-16DP-DS
 CN601,,GT8E-8P-DS
-IC1,74*00
-R1,120
-R2,10k
-R3,10k
-R4,10k
-R5,10k
-R7,47k
-R8,47k
-R9,1k
-R10,1k
+IC1,74*00,
+R1,120,
+R2,10k,
+R3,10k,
+R4,10k,
+R5,10k,
+R7,47k,
+R8,47k,
+R9,1k,
+R10,1k,
 
