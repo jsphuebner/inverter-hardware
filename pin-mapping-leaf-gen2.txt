@@ -1,5 +1,5 @@
 Connection diagram of CN001
-
+Diagram found here: http://productions.8dromeda.net/c55-leaf-inverter-protocol.html
 +-----------------------------------+  +------------+
 | 47   46   21 20 19 18 17 16 15 14 |  |       x  x |
 |           29 28 27 26 25  x 23 22 |  |  6 x  x  x |
