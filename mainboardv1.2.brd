@@ -131,7 +131,7 @@
 <hole x="76.2" y="76.2" drill="4.2"/>
 <hole x="3.81" y="3.81" drill="4.2"/>
 <hole x="76.2" y="3.81" drill="4.2"/>
-<text x="25.3125" y="22.8125" size="1.27" layer="25" rot="R90">openinverter.org main board</text>
+<text x="25.3125" y="22.8125" size="1.27" layer="25" rot="R90">openinverter.org main board rev 1.2</text>
 <text x="38.4375" y="54.6875" size="1.27" layer="25" rot="R180">(C) 2020 Johannes Huebner</text>
 </plain>
 <libraries>
