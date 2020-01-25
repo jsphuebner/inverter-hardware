@@ -22929,6 +22929,28 @@ Based on the following sources:
 <text x="-0.8255" y="2.159" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.9525" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="SC70-6">
+<wire x1="1" y1="0.725" x2="1" y2="-0.725" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.725" x2="-1" y2="0.725" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.725" x2="1" y2="-0.725" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.725" x2="1" y2="0.725" width="0.127" layer="51"/>
+<smd name="1" x="-0.65" y="-0.925" dx="0.4" dy="0.75" layer="1" cream="no"/>
+<smd name="2" x="0" y="-0.925" dx="0.4" dy="0.75" layer="1" cream="no"/>
+<smd name="3" x="0.65" y="-0.925" dx="0.4" dy="0.75" layer="1" cream="no"/>
+<smd name="4" x="0.65" y="0.925" dx="0.4" dy="0.75" layer="1" cream="no"/>
+<smd name="6" x="-0.65" y="0.925" dx="0.4" dy="0.75" layer="1" cream="no"/>
+<smd name="5" x="0" y="0.925" dx="0.4" dy="0.75" layer="1" cream="no"/>
+<text x="-0.889" y="1.524" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-0.254" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.85" y1="0.55" x2="-0.45" y2="1.3" layer="31"/>
+<rectangle x1="0.45" y1="0.55" x2="0.85" y2="1.3" layer="31"/>
+<rectangle x1="-0.85" y1="-1.3" x2="-0.45" y2="-0.55" layer="31"/>
+<rectangle x1="-0.2" y1="0.55" x2="0.2" y2="1.3" layer="31"/>
+<rectangle x1="-0.85" y1="-1.3" x2="-0.45" y2="-0.55" layer="31"/>
+<rectangle x1="-0.85" y1="-1.3" x2="-0.45" y2="-0.55" layer="31"/>
+<rectangle x1="-0.201" y1="-1.3" x2="0.199" y2="-0.55" layer="31"/>
+<rectangle x1="0.45" y1="-1.3" x2="0.85" y2="-0.55" layer="31"/>
+</package>
 </packages>
 <symbols>
 <symbol name="7412">
@@ -22953,18 +22975,31 @@ Based on the following sources:
 <deviceset name="74*1G10" prefix="IC">
 <description>3-input NAND gate</description>
 <gates>
-<gate name="G$1" symbol="7412" x="0" y="0"/>
-<gate name="G$2" symbol="PWRN-1" x="0" y="0"/>
+<gate name="&gt;NAME" symbol="7412" x="0" y="0"/>
+<gate name="PWR" symbol="PWRN-1" x="0" y="22.86"/>
 </gates>
 <devices>
 <device name="" package="SOT23-6">
 <connects>
-<connect gate="G$1" pin="I0" pad="1"/>
-<connect gate="G$1" pin="I1" pad="3"/>
-<connect gate="G$1" pin="I2" pad="6"/>
-<connect gate="G$1" pin="O" pad="4"/>
-<connect gate="G$2" pin="GND" pad="2"/>
-<connect gate="G$2" pin="VCC" pad="5"/>
+<connect gate="&gt;NAME" pin="I0" pad="1"/>
+<connect gate="&gt;NAME" pin="I1" pad="3"/>
+<connect gate="&gt;NAME" pin="I2" pad="6"/>
+<connect gate="&gt;NAME" pin="O" pad="4"/>
+<connect gate="PWR" pin="GND" pad="2"/>
+<connect gate="PWR" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="X" package="SC70-6">
+<connects>
+<connect gate="&gt;NAME" pin="I0" pad="1"/>
+<connect gate="&gt;NAME" pin="I1" pad="3"/>
+<connect gate="&gt;NAME" pin="I2" pad="6"/>
+<connect gate="&gt;NAME" pin="O" pad="4"/>
+<connect gate="PWR" pin="GND" pad="2"/>
+<connect gate="PWR" pin="VCC" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -23162,7 +23197,6 @@ Based on the following sources:
 <part name="GND69" library="supply1" deviceset="GND" device=""/>
 <part name="GND45" library="supply1" deviceset="GND" device=""/>
 <part name="P+15" library="supply1" deviceset="VCC" device=""/>
-<part name="IC9" library="74xx-eu" deviceset="74*1G10" device="" value="SN74LVC1G10"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="VCC4" library="supply1" deviceset="VCCIO" device=""/>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
@@ -23174,6 +23208,7 @@ Based on the following sources:
 <part name="P+10" library="supply1" deviceset="VCC" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M"/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="TRACE"/>
+<part name="IC9" library="74xx-eu" deviceset="74*1G10" device="X" value="NC7SZ10P6X"/>
 </parts>
 <sheets>
 <sheet>
@@ -23551,11 +23586,6 @@ MIC2288YD5</text>
 <instance part="GND69" gate="1" x="154.94" y="43.18" rot="MR0"/>
 <instance part="GND45" gate="1" x="182.88" y="43.18"/>
 <instance part="P+15" gate="VCC" x="-38.1" y="-40.64"/>
-<instance part="IC9" gate="G$1" x="246.38" y="-5.08" smashed="yes">
-<attribute name="NAME" x="238.76" y="0.635" size="1.778" layer="95"/>
-<attribute name="VALUE" x="241.3" y="-25.4" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="IC9" gate="G$2" x="248.92" y="-5.08" smashed="yes"/>
 <instance part="GND17" gate="1" x="248.92" y="-17.78"/>
 <instance part="VCC4" gate="G$1" x="248.92" y="7.62" smashed="yes"/>
 <instance part="P+9" gate="VCC" x="223.52" y="-7.62" smashed="yes"/>
@@ -23567,6 +23597,10 @@ MIC2288YD5</text>
 <instance part="P+10" gate="VCC" x="213.36" y="-81.28" smashed="yes" rot="MR0"/>
 <instance part="LOGO1" gate="G$1" x="-45.72" y="60.96"/>
 <instance part="SJ1" gate="1" x="-81.28" y="106.68"/>
+<instance part="IC9" gate="&gt;NAME" x="246.38" y="-5.08" smashed="yes">
+<attribute name="VALUE" x="241.3" y="-25.4" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="IC9" gate="PWR" x="248.92" y="-5.08" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -23669,7 +23703,7 @@ MIC2288YD5</text>
 <segment>
 <wire x1="254" y1="-5.08" x2="259.08" y2="-5.08" width="0.1524" layer="91"/>
 <label x="259.08" y="-5.08" size="1.778" layer="95" rot="R90"/>
-<pinref part="IC9" gate="G$1" pin="O"/>
+<pinref part="IC9" gate="&gt;NAME" pin="O"/>
 </segment>
 </net>
 <net name="TIM1_CH1N" class="0">
@@ -23836,13 +23870,13 @@ MIC2288YD5</text>
 <pinref part="R45" gate="G$1" pin="1"/>
 <pinref part="C38" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="-22.86" x2="223.52" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="IC9" gate="G$1" pin="I2"/>
 <label x="215.9" y="-25.4" size="1.778" layer="95" rot="R180"/>
 <wire x1="238.76" y1="-7.62" x2="233.68" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="-7.62" x2="233.68" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="-27.94" x2="223.52" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="223.52" y="-27.94"/>
 <wire x1="223.52" y1="-27.94" x2="213.36" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="IC9" gate="&gt;NAME" pin="I2"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="13"/>
@@ -24256,10 +24290,6 @@ MIC2288YD5</text>
 <junction x="175.26" y="55.88"/>
 </segment>
 <segment>
-<pinref part="IC9" gate="G$2" pin="GND"/>
-<pinref part="GND17" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND46" gate="1" pin="GND"/>
 <pinref part="C26" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="-27.94" x2="119.38" y2="-27.94" width="0.1524" layer="91"/>
@@ -24277,6 +24307,10 @@ MIC2288YD5</text>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="C48" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND17" gate="1" pin="GND"/>
+<pinref part="IC9" gate="PWR" pin="GND"/>
 </segment>
 </net>
 <net name="PC1/ADC11" class="0">
@@ -24468,11 +24502,11 @@ MIC2288YD5</text>
 <wire x1="203.2" y1="0" x2="203.2" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="0" x2="215.9" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="-2.54" x2="238.76" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="IC9" gate="G$1" pin="I0"/>
 <wire x1="193.04" y1="0" x2="203.2" y2="0" width="0.1524" layer="91"/>
 <junction x="203.2" y="0"/>
 <wire x1="215.9" y1="-2.54" x2="203.2" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="215.9" y="-2.54"/>
+<pinref part="IC9" gate="&gt;NAME" pin="I0"/>
 </segment>
 </net>
 <net name="UDC" class="0">
@@ -24657,7 +24691,7 @@ MIC2288YD5</text>
 <segment>
 <wire x1="238.76" y1="-5.08" x2="233.68" y2="-5.08" width="0.1524" layer="91"/>
 <label x="220.98" y="-5.08" size="1.778" layer="95"/>
-<pinref part="IC9" gate="G$1" pin="I1"/>
+<pinref part="IC9" gate="&gt;NAME" pin="I1"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -25054,8 +25088,8 @@ MIC2288YD5</text>
 <wire x1="254" y1="-58.42" x2="254" y2="-57.15" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC9" gate="G$2" pin="VCC"/>
 <pinref part="VCC4" gate="G$1" pin="VCCIO"/>
+<pinref part="IC9" gate="PWR" pin="VCC"/>
 </segment>
 </net>
 <net name="NRST" class="0">
