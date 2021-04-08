@@ -1,0 +1,8 @@
+Ref,Part,Value,Remarks
+"IC1,IC2",1ED3124MU12HXUMA1,,
+"C1, C2, C3, C5",C0603,1uF,
+D1,SMB,CMR1-10 TR13 PBFREE,Any high voltage diode 1A
+"R1,R2,R3,R4,R6,R7,R9,R10",R0603,10Ω,"Gate resistors, application dependent"
+IC3,MLX91206LDC-CAH-004-TU,,
+R5,R0603,3k3,
+R8,R0603,6k8,Not needed on V3 mainboards
