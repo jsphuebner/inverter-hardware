@@ -21161,6 +21161,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="10µ"/>
 <part name="SJ3" library="SparkFun-Passives" deviceset="SOLDERJUMPER_2WAY" device="PASTE2&amp;3"/>
+<part name="R27" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21284,7 +21286,7 @@ PC9=din_desat</text>
 <instance part="R24" gate="G$1" x="-68.58" y="-96.52"/>
 <instance part="C44" gate="G$1" x="-124.46" y="-99.06"/>
 <instance part="C45" gate="G$1" x="-63.5" y="-99.06"/>
-<instance part="IC6" gate="G$1" x="213.36" y="-91.44" rot="MR180"/>
+<instance part="IC6" gate="G$1" x="220.98" y="-83.82" rot="MR180"/>
 <instance part="GND31" gate="1" x="-71.12" y="-71.12"/>
 <instance part="C32" gate="G$1" x="-71.12" y="-63.5"/>
 <instance part="R12" gate="G$1" x="223.52" y="-17.78" rot="R90"/>
@@ -21349,15 +21351,15 @@ PC9=din_desat</text>
 <instance part="GND62" gate="1" x="-53.34" y="-109.22"/>
 <instance part="D1" gate="G$1" x="0" y="127" rot="R270"/>
 <instance part="P+12" gate="1" x="0" y="134.62" smashed="yes"/>
-<instance part="L3" gate="G$1" x="165.1" y="-86.36"/>
+<instance part="L3" gate="G$1" x="172.72" y="-78.74"/>
 <instance part="FID1" gate="G$1" x="-97.79" y="119.38"/>
 <instance part="P+15" gate="VCC" x="-68.58" y="109.22"/>
 <instance part="GND17" gate="1" x="248.92" y="-17.78"/>
 <instance part="VCC4" gate="G$1" x="248.92" y="7.62" smashed="yes"/>
 <instance part="P+9" gate="VCC" x="223.52" y="-7.62" smashed="yes"/>
 <instance part="GND2" gate="1" x="83.82" y="0" rot="MR0"/>
-<instance part="C42" gate="G$1" x="165.1" y="-93.98"/>
-<instance part="GND4" gate="1" x="165.1" y="-101.6"/>
+<instance part="C42" gate="G$1" x="172.72" y="-86.36"/>
+<instance part="GND4" gate="1" x="172.72" y="-93.98"/>
 <instance part="LOGO1" gate="G$1" x="193.04" y="119.38"/>
 <instance part="IC3" gate="&gt;NAME" x="246.38" y="-5.08" smashed="yes">
 <attribute name="VALUE" x="241.3" y="-25.4" size="1.778" layer="96" rot="R90"/>
@@ -21370,7 +21372,7 @@ PC9=din_desat</text>
 <instance part="R2" gate="G$1" x="12.7" y="119.38" rot="R90"/>
 <instance part="R5" gate="G$1" x="43.18" y="109.22" rot="R90"/>
 <instance part="R4" gate="G$1" x="60.96" y="111.76" rot="R180"/>
-<instance part="VCC5" gate="G$1" x="165.1" y="-78.74" smashed="yes" rot="MR0"/>
+<instance part="VCC5" gate="G$1" x="172.72" y="-71.12" smashed="yes" rot="MR0"/>
 <instance part="J1" gate="G$1" x="7.62" y="68.58" rot="R90"/>
 <instance part="R16" gate="G$1" x="66.04" y="-63.5"/>
 <instance part="R17" gate="G$1" x="78.74" y="-63.5"/>
@@ -21425,6 +21427,8 @@ PC9=din_desat</text>
 <instance part="P+6" gate="VCC" x="-127" y="-10.16"/>
 <instance part="C2" gate="G$1" x="0" y="121.92"/>
 <instance part="SJ3" gate="G$1" x="-35.56" y="20.32" rot="R270"/>
+<instance part="R27" gate="G$1" x="241.3" y="-96.52" rot="R90"/>
+<instance part="GND1" gate="1" x="241.3" y="-104.14"/>
 </instances>
 <busses>
 </busses>
@@ -21437,8 +21441,8 @@ PC9=din_desat</text>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="RXD"/>
-<wire x1="203.2" y1="-91.44" x2="195.58" y2="-91.44" width="0.1524" layer="91"/>
-<label x="187.96" y="-88.9" size="1.778" layer="95" rot="MR180"/>
+<wire x1="210.82" y1="-83.82" x2="203.2" y2="-83.82" width="0.1524" layer="91"/>
+<label x="195.58" y="-81.28" size="1.778" layer="95" rot="MR180"/>
 </segment>
 </net>
 <net name="PA12/CANTX" class="0">
@@ -21449,8 +21453,8 @@ PC9=din_desat</text>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="TXD"/>
-<wire x1="203.2" y1="-99.06" x2="195.58" y2="-99.06" width="0.1524" layer="91"/>
-<label x="187.96" y="-96.52" size="1.778" layer="95" rot="MR180"/>
+<wire x1="210.82" y1="-91.44" x2="203.2" y2="-91.44" width="0.1524" layer="91"/>
+<label x="195.58" y="-88.9" size="1.778" layer="95" rot="MR180"/>
 </segment>
 </net>
 <net name="PA8/TIM1_CH1" class="0">
@@ -21997,10 +22001,10 @@ PC9=din_desat</text>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="C42" gate="G$1" pin="2"/>
 <pinref part="IC6" gate="G$1" pin="VSS"/>
-<wire x1="203.2" y1="-96.52" x2="175.26" y2="-96.52" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="-96.52" x2="175.26" y2="-99.06" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="-99.06" x2="165.1" y2="-99.06" width="0.1524" layer="91"/>
-<junction x="165.1" y="-99.06"/>
+<wire x1="210.82" y1="-88.9" x2="182.88" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="-88.9" x2="182.88" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="-91.44" x2="172.72" y2="-91.44" width="0.1524" layer="91"/>
+<junction x="172.72" y="-91.44"/>
 </segment>
 <segment>
 <pinref part="GND17" gate="1" pin="GND"/>
@@ -22059,6 +22063,10 @@ PC9=din_desat</text>
 <wire x1="-25.4" y1="86.36" x2="-35.56" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="86.36" x2="-35.56" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="1"/>
+</segment>
+<segment>
+<pinref part="R27" gate="G$1" pin="1"/>
+<pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="PC1/ADC11" class="0">
@@ -22562,8 +22570,8 @@ PC9=din_desat</text>
 <net name="CANL" class="0">
 <segment>
 <pinref part="IC6" gate="G$1" pin="CANL"/>
-<wire x1="233.68" y1="-93.98" x2="241.3" y2="-93.98" width="0.1524" layer="91"/>
-<label x="238.76" y="-91.44" size="1.778" layer="95" rot="MR180"/>
+<wire x1="241.3" y1="-86.36" x2="248.92" y2="-86.36" width="0.1524" layer="91"/>
+<label x="246.38" y="-83.82" size="1.778" layer="95" rot="MR180"/>
 </segment>
 <segment>
 <wire x1="-104.14" y1="78.74" x2="-104.14" y2="83.82" width="0.1524" layer="91"/>
@@ -22574,8 +22582,8 @@ PC9=din_desat</text>
 <net name="CANH" class="0">
 <segment>
 <pinref part="IC6" gate="G$1" pin="CANH"/>
-<wire x1="233.68" y1="-96.52" x2="241.3" y2="-96.52" width="0.1524" layer="91"/>
-<label x="238.76" y="-93.98" size="1.778" layer="95" rot="MR180"/>
+<wire x1="241.3" y1="-88.9" x2="248.92" y2="-88.9" width="0.1524" layer="91"/>
+<label x="246.38" y="-86.36" size="1.778" layer="95" rot="MR180"/>
 </segment>
 <segment>
 <wire x1="-101.6" y1="83.82" x2="-101.6" y2="78.74" width="0.1524" layer="91"/>
@@ -23088,10 +23096,10 @@ PC9=din_desat</text>
 <pinref part="C42" gate="G$1" pin="1"/>
 <pinref part="L3" gate="G$1" pin="2"/>
 <pinref part="IC6" gate="G$1" pin="VDD"/>
-<wire x1="203.2" y1="-93.98" x2="175.26" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="-93.98" x2="175.26" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="-91.44" x2="165.1" y2="-91.44" width="0.1524" layer="91"/>
-<junction x="165.1" y="-91.44"/>
+<wire x1="210.82" y1="-86.36" x2="182.88" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="-86.36" x2="182.88" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="-83.82" x2="172.72" y2="-83.82" width="0.1524" layer="91"/>
+<junction x="172.72" y="-83.82"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -23136,6 +23144,12 @@ PC9=din_desat</text>
 <pinref part="C16" gate="G$1" pin="1"/>
 <pinref part="SJ3" gate="G$1" pin="3"/>
 <wire x1="-40.64" y1="15.24" x2="-40.64" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="IC6" gate="G$1" pin="RS"/>
+<pinref part="R27" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
