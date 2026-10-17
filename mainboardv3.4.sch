@@ -17516,6 +17516,7 @@ package type OT</description>
 <rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+<circle x="-1.009553125" y="-0.2607125" radius="0.14118125" width="0.127" layer="21"/>
 </package>
 <package name="SMADIODE">
 <description>&lt;b&gt;SMA Surface Mount Diode&lt;/b&gt;</description>
@@ -24106,115 +24107,6 @@ Various fiducial points for machine vision alignment.</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="74xx-eu">
-<description>&lt;b&gt;TTL Devices, 74xx Series with European Symbols&lt;/b&gt;&lt;p&gt;
-Based on the following sources:
-&lt;ul&gt;
-&lt;li&gt;Texas Instruments &lt;i&gt;TTL Data Book&lt;/i&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;Volume 1, 1996.
-&lt;li&gt;TTL Data Book, Volume 2 , 1993
-&lt;li&gt;National Seminconductor Databook 1990, ALS/LS Logic
-&lt;li&gt;ttl 74er digital data dictionary, ECA Electronic + Acustic GmbH, ISBN 3-88109-032-0
-&lt;li&gt;http://icmaster.com/ViewCompare.asp
-&lt;/ul&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SOT23-6">
-<wire x1="1.4224" y1="0.8104" x2="1.4224" y2="-0.8104" width="0.2032" layer="21"/>
-<wire x1="-1.4224" y1="-0.8104" x2="-1.4224" y2="0.8104" width="0.2032" layer="21"/>
-<wire x1="-1.3276" y1="-0.8104" x2="-1.4224" y2="-0.8104" width="0.2032" layer="21"/>
-<wire x1="1.4224" y1="-0.8104" x2="1.3276" y2="-0.8104" width="0.2032" layer="21"/>
-<wire x1="1.3276" y1="0.8104" x2="1.4224" y2="0.8104" width="0.2032" layer="21"/>
-<wire x1="-1.4224" y1="0.8104" x2="-1.3276" y2="0.8104" width="0.2032" layer="21"/>
-<circle x="0.9398" y="0.381" radius="0.0359" width="0.3048" layer="21"/>
-<smd name="4" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="6" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="1" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="3" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="1.3001" dx="0.55" dy="1.2" layer="1" rot="R180"/>
-<text x="-0.8255" y="2.159" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9525" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="SC70-6">
-<wire x1="1" y1="0.725" x2="1" y2="-0.725" width="0.127" layer="51"/>
-<wire x1="-1" y1="-0.725" x2="-1" y2="0.725" width="0.127" layer="51"/>
-<wire x1="-1" y1="-0.725" x2="1" y2="-0.725" width="0.127" layer="51"/>
-<wire x1="-1" y1="0.725" x2="1" y2="0.725" width="0.127" layer="51"/>
-<smd name="1" x="-0.65" y="-0.925" dx="0.4" dy="0.75" layer="1" cream="no"/>
-<smd name="2" x="0" y="-0.925" dx="0.4" dy="0.75" layer="1" cream="no"/>
-<smd name="3" x="0.65" y="-0.925" dx="0.4" dy="0.75" layer="1" cream="no"/>
-<smd name="4" x="0.65" y="0.925" dx="0.4" dy="0.75" layer="1" cream="no"/>
-<smd name="6" x="-0.65" y="0.925" dx="0.4" dy="0.75" layer="1" cream="no"/>
-<smd name="5" x="0" y="0.925" dx="0.4" dy="0.75" layer="1" cream="no"/>
-<text x="-0.889" y="1.524" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.762" y="-0.254" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.85" y1="0.55" x2="-0.45" y2="1.3" layer="31"/>
-<rectangle x1="0.45" y1="0.55" x2="0.85" y2="1.3" layer="31"/>
-<rectangle x1="-0.85" y1="-1.3" x2="-0.45" y2="-0.55" layer="31"/>
-<rectangle x1="-0.2" y1="0.55" x2="0.2" y2="1.3" layer="31"/>
-<rectangle x1="-0.85" y1="-1.3" x2="-0.45" y2="-0.55" layer="31"/>
-<rectangle x1="-0.85" y1="-1.3" x2="-0.45" y2="-0.55" layer="31"/>
-<rectangle x1="-0.201" y1="-1.3" x2="0.199" y2="-0.55" layer="31"/>
-<rectangle x1="0.45" y1="-1.3" x2="0.85" y2="-0.55" layer="31"/>
-</package>
-</packages>
-<symbols>
-<symbol name="7412">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
-<text x="2.54" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="I0" x="-7.62" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="I1" x="-7.62" y="0" visible="pad" length="middle" direction="in" swaplevel="1"/>
-<pin name="O" x="7.62" y="0" visible="pad" length="middle" direction="oc" function="dot" rot="R180"/>
-<pin name="I2" x="-7.62" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
-</symbol>
-<symbol name="PWRN-1">
-<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.905" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
-<text x="1.905" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
-<pin name="GND" x="0" y="-10.16" visible="pad" direction="pwr" rot="R90"/>
-<pin name="VCC" x="0" y="10.16" visible="pad" direction="pwr" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="74*1G10" prefix="IC">
-<description>3-input NAND gate</description>
-<gates>
-<gate name="&gt;NAME" symbol="7412" x="0" y="0"/>
-<gate name="PWR" symbol="PWRN-1" x="0" y="22.86"/>
-</gates>
-<devices>
-<device name="" package="SOT23-6">
-<connects>
-<connect gate="&gt;NAME" pin="I0" pad="1"/>
-<connect gate="&gt;NAME" pin="I1" pad="3"/>
-<connect gate="&gt;NAME" pin="I2" pad="6"/>
-<connect gate="&gt;NAME" pin="O" pad="4"/>
-<connect gate="PWR" pin="GND" pad="2"/>
-<connect gate="PWR" pin="VCC" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="X" package="SC70-6">
-<connects>
-<connect gate="&gt;NAME" pin="I0" pad="1"/>
-<connect gate="&gt;NAME" pin="I1" pad="3"/>
-<connect gate="&gt;NAME" pin="I2" pad="6"/>
-<connect gate="&gt;NAME" pin="O" pad="4"/>
-<connect gate="PWR" pin="GND" pad="2"/>
-<connect gate="PWR" pin="VCC" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="tag-connect">
 <description>&lt;h3&gt;TAG-CONNECT ICSP Connector&lt;/h3&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
 &lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
@@ -25048,6 +24940,126 @@ Source: http://www.irf.com/product-info/datasheets/data/irfr5305pbf.pdf</descrip
 </deviceset>
 </devicesets>
 </library>
+<library name="74xx-little-de">
+<description>&lt;b&gt;Single and Dual Gates Family, US symbols&lt;/b&gt;&lt;p&gt;
+Little logic devices from Texas Instruments&lt;br&gt;
+TinyLogic(R) from FAIRCHILD Semiconductor TM
+&lt;p&gt;
+&lt;author&gt;Created by evgeni@eniks.com&lt;/author&gt;&lt;br&gt;
+&lt;author&gt;Extended by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOT23-5">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
+SOT753 - Philips Semiconductors&lt;br&gt;
+Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_HCT1G66_3.pdf</description>
+<wire x1="0" y1="-1.29" x2="0" y2="-1.3" width="0.01" layer="21"/>
+<wire x1="1.42" y1="0.8" x2="1.42" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.42" y1="-0.8" x2="-1.42" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-1.42" y1="-0.8" x2="-1.42" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-1.42" y1="0.8" x2="1.42" y2="0.8" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="0.65" x2="1.28" y2="0.65" width="0.075" layer="21"/>
+<wire x1="1.28" y1="0.65" x2="1.28" y2="-0.66" width="0.075" layer="21"/>
+<wire x1="1.28" y1="-0.66" x2="-1.27" y2="-0.66" width="0.075" layer="21"/>
+<wire x1="-1.27" y1="-0.66" x2="-1.27" y2="0.65" width="0.075" layer="21"/>
+<wire x1="-1.75" y1="2.25" x2="1.75" y2="2.25" width="0.254" layer="39"/>
+<wire x1="1.75" y1="2.25" x2="1.75" y2="-2.25" width="0.254" layer="39"/>
+<wire x1="1.75" y1="-2.25" x2="-1.75" y2="-2.25" width="0.254" layer="39"/>
+<wire x1="-1.75" y1="-2.25" x2="-1.75" y2="2.25" width="0.254" layer="39"/>
+<smd name="1" x="-0.95" y="-1.29" dx="0.69" dy="0.99" layer="1"/>
+<smd name="2" x="0" y="-1.29" dx="0.69" dy="0.99" layer="1"/>
+<smd name="3" x="0.95" y="-1.29" dx="0.69" dy="0.99" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.69" dy="0.99" layer="1"/>
+<smd name="5" x="-0.95" y="1.3" dx="0.69" dy="0.99" layer="1"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.11" y1="0.68" x2="-0.78" y2="1.43" layer="51"/>
+<rectangle x1="0.79" y1="0.67" x2="1.12" y2="1.42" layer="51"/>
+<rectangle x1="-1.11" y1="-1.42" x2="-0.78" y2="-0.67" layer="51"/>
+<rectangle x1="-0.16" y1="-1.42" x2="0.17" y2="-0.67" layer="51"/>
+<rectangle x1="0.79" y1="-1.42" x2="1.12" y2="-0.67" layer="51"/>
+</package>
+<package name="SC70-5">
+<description>&lt;b&gt;SMT SC70-5&lt;/b&gt;&lt;p&gt;
+SOT353 - Philips Semiconductors&lt;br&gt;
+Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_HCT1G66_3.pdf</description>
+<wire x1="1" y1="0.55" x2="-1" y2="0.55" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.55" x2="-1" y2="-0.55" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.55" x2="1" y2="-0.55" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.55" x2="1" y2="0.55" width="0.127" layer="21"/>
+<smd name="1" x="-0.65" y="-0.85" dx="0.4" dy="0.7" layer="1"/>
+<smd name="2" x="0" y="-0.85" dx="0.4" dy="0.7" layer="1"/>
+<smd name="3" x="0.65" y="-0.85" dx="0.4" dy="0.7" layer="1"/>
+<smd name="4" x="0.65" y="0.85" dx="0.4" dy="0.7" layer="1"/>
+<smd name="5" x="-0.65" y="0.85" dx="0.4" dy="0.7" layer="1"/>
+<text x="-2.54" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.125" y1="-1.05" x2="0.125" y2="-0.6" layer="51"/>
+<rectangle x1="-0.775" y1="-1.05" x2="-0.525" y2="-0.6" layer="51"/>
+<rectangle x1="0.525" y1="-1.05" x2="0.775" y2="-0.6" layer="51"/>
+<rectangle x1="-0.775" y1="0.6" x2="-0.525" y2="1.05" layer="51"/>
+<rectangle x1="0.525" y1="0.6" x2="0.775" y2="1.05" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="7400">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
+<text x="-2.54" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="I0" x="-5.08" y="2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="I1" x="-5.08" y="-2.54" visible="pad" length="short" direction="in" swaplevel="1"/>
+<pin name="O" x="7.62" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
+</symbol>
+<symbol name="PWRN">
+<text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.905" y="-6.35" size="1.27" layer="95" rot="R90">GND</text>
+<text x="1.905" y="2.54" size="1.27" layer="95" rot="R90">VCC</text>
+<pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="74*1G00" prefix="IC">
+<description>2-input &lt;b&gt;NAND&lt;/b&gt; gate</description>
+<gates>
+<gate name="A" symbol="7400" x="20.32" y="0"/>
+<gate name="P" symbol="PWRN" x="2.54" y="-5.08" addlevel="request"/>
+</gates>
+<devices>
+<device name="DBV" package="SOT23-5">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="O" pad="4"/>
+<connect gate="P" pin="GND" pad="3"/>
+<connect gate="P" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name="AHC"/>
+<technology name="AHCT"/>
+<technology name="AUC"/>
+<technology name="LVC"/>
+</technologies>
+</device>
+<device name="DCK" package="SC70-5">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="O" pad="4"/>
+<connect gate="P" pin="GND" pad="3"/>
+<connect gate="P" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name="AHC"/>
+<technology name="AHCT"/>
+<technology name="AUC"/>
+<technology name="LVC"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -25135,7 +25147,7 @@ Source: http://www.irf.com/product-info/datasheets/data/irfr5305pbf.pdf</descrip
 <part name="VCC1" library="supply1" deviceset="VCCIO" device=""/>
 <part name="VCC2" library="supply1" deviceset="VCCIO" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="C24" library="rcl" deviceset="C-EU" device="C0603" value="1µ"/>
+<part name="C24" library="rcl" deviceset="C-EU" device="C0603" value="10µ"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="3k3"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="3k3"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="3k3"/>
@@ -25179,7 +25191,7 @@ Source: http://www.irf.com/product-info/datasheets/data/irfr5305pbf.pdf</descrip
 <part name="C44" library="rcl" deviceset="C-EU" device="C0603" value="22n"/>
 <part name="GND50" library="supply1" deviceset="GND" device=""/>
 <part name="GND58" library="supply1" deviceset="GND" device=""/>
-<part name="L3" library="rcl" deviceset="L-EU" device="L2012C" value="10µH"/>
+<part name="L3" library="rcl" deviceset="L-EU" device="L2012C" value="100µH"/>
 <part name="VCC8" library="supply1" deviceset="VCCIO" device=""/>
 <part name="P+17" library="supply1" deviceset="+12V" device=""/>
 <part name="P+14" library="supply1" deviceset="VCC" device=""/>
@@ -25234,7 +25246,6 @@ Source: http://www.irf.com/product-info/datasheets/data/irfr5305pbf.pdf</descrip
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="M"/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="TRACE"/>
-<part name="IC9" library="74xx-eu" deviceset="74*1G10" device="X" value="NC7SZ10P6X"/>
 <part name="J1" library="tag-connect" deviceset="TC2030_SWD" device="-MCP"/>
 <part name="VCC3" library="supply1" deviceset="VCCIO" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
@@ -25246,6 +25257,7 @@ Source: http://www.irf.com/product-info/datasheets/data/irfr5305pbf.pdf</descrip
 <part name="IC6" library="uln-udn" deviceset="ULN2003A" device="D"/>
 <part name="VCC5" library="supply1" deviceset="VCCIO" device=""/>
 <part name="U$1" library="SparkFun-Aesthetics" deviceset="OI-LOGO" device=""/>
+<part name="IC9" library="74xx-little-de" deviceset="74*1G00" device="DCK" technology="AHC"/>
 </parts>
 <sheets>
 <sheet>
@@ -25604,8 +25616,8 @@ MIC2288YD5</text>
 <instance part="GND69" gate="1" x="154.94" y="43.18" rot="MR0"/>
 <instance part="GND45" gate="1" x="182.88" y="43.18"/>
 <instance part="P+15" gate="VCC" x="-38.1" y="-40.64"/>
-<instance part="GND17" gate="1" x="248.92" y="-17.78"/>
-<instance part="VCC4" gate="G$1" x="248.92" y="7.62" smashed="yes"/>
+<instance part="GND17" gate="1" x="248.92" y="-15.24"/>
+<instance part="VCC4" gate="G$1" x="248.92" y="5.08" smashed="yes"/>
 <instance part="P+9" gate="VCC" x="223.52" y="-7.62" smashed="yes"/>
 <instance part="GND2" gate="1" x="83.82" y="0" rot="MR0"/>
 <instance part="P+13" gate="VCC" x="20.32" y="-66.04"/>
@@ -25613,10 +25625,6 @@ MIC2288YD5</text>
 <instance part="GND4" gate="1" x="213.36" y="-93.98"/>
 <instance part="LOGO1" gate="G$1" x="-45.72" y="60.96"/>
 <instance part="SJ1" gate="1" x="-81.28" y="106.68"/>
-<instance part="IC9" gate="&gt;NAME" x="246.38" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="241.3" y="-25.4" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="IC9" gate="PWR" x="248.92" y="-5.08" smashed="yes"/>
 <instance part="J1" gate="G$1" x="5.08" y="68.58" rot="R90"/>
 <instance part="VCC3" gate="G$1" x="-10.16" y="60.96"/>
 <instance part="GND5" gate="1" x="10.16" y="53.34"/>
@@ -25628,6 +25636,8 @@ MIC2288YD5</text>
 <instance part="IC6" gate="A" x="-99.06" y="116.84"/>
 <instance part="VCC5" gate="G$1" x="213.36" y="-81.28" smashed="yes" rot="MR0"/>
 <instance part="U$1" gate="G$1" x="-35.56" y="68.58"/>
+<instance part="IC9" gate="A" x="246.38" y="-5.08"/>
+<instance part="IC9" gate="P" x="248.92" y="-5.08"/>
 </instances>
 <busses>
 </busses>
@@ -25733,7 +25743,7 @@ MIC2288YD5</text>
 <segment>
 <wire x1="254" y1="-5.08" x2="259.08" y2="-5.08" width="0.1524" layer="91"/>
 <label x="259.08" y="-5.08" size="1.778" layer="95" rot="R90"/>
-<pinref part="IC9" gate="&gt;NAME" pin="O"/>
+<pinref part="IC9" gate="A" pin="O"/>
 </segment>
 </net>
 <net name="TIM1_CH1N" class="0">
@@ -25901,12 +25911,12 @@ MIC2288YD5</text>
 <pinref part="C38" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="-22.86" x2="223.52" y2="-27.94" width="0.1524" layer="91"/>
 <label x="215.9" y="-25.4" size="1.778" layer="95" rot="R180"/>
-<wire x1="238.76" y1="-7.62" x2="233.68" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="-7.62" x2="233.68" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="-7.62" x2="233.68" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="-27.94" x2="223.52" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="223.52" y="-27.94"/>
 <wire x1="223.52" y1="-27.94" x2="213.36" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="IC9" gate="&gt;NAME" pin="I2"/>
+<pinref part="IC9" gate="A" pin="I1"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="13"/>
@@ -26312,10 +26322,6 @@ MIC2288YD5</text>
 <pinref part="C48" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="GND17" gate="1" pin="GND"/>
-<pinref part="IC9" gate="PWR" pin="GND"/>
-</segment>
-<segment>
 <pinref part="J1" gate="G$1" pin="GND"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
@@ -26329,6 +26335,10 @@ MIC2288YD5</text>
 <pinref part="IC6" gate="A" pin="I7"/>
 <wire x1="-111.76" y1="109.22" x2="-111.76" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-111.76" y="106.68"/>
+</segment>
+<segment>
+<pinref part="IC9" gate="P" pin="GND"/>
+<pinref part="GND17" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="PC1/ADC11" class="0">
@@ -26524,12 +26534,12 @@ MIC2288YD5</text>
 <label x="220.98" y="-2.54" size="1.778" layer="95"/>
 <wire x1="203.2" y1="0" x2="203.2" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="0" x2="215.9" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="-2.54" x2="238.76" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="-2.54" x2="241.3" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="0" x2="203.2" y2="0" width="0.1524" layer="91"/>
 <junction x="203.2" y="0"/>
 <wire x1="215.9" y1="-2.54" x2="203.2" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="215.9" y="-2.54"/>
-<pinref part="IC9" gate="&gt;NAME" pin="I0"/>
+<pinref part="IC9" gate="A" pin="I0"/>
 </segment>
 </net>
 <net name="UDC" class="0">
@@ -26710,11 +26720,6 @@ MIC2288YD5</text>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="-67.31" y1="-15.24" x2="-73.66" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="-73.66" y="-15.24"/>
-</segment>
-<segment>
-<wire x1="238.76" y1="-5.08" x2="233.68" y2="-5.08" width="0.1524" layer="91"/>
-<label x="220.98" y="-5.08" size="1.778" layer="95"/>
-<pinref part="IC9" gate="&gt;NAME" pin="I1"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -27086,10 +27091,6 @@ MIC2288YD5</text>
 <wire x1="254" y1="-58.42" x2="254" y2="-57.15" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="VCC4" gate="G$1" pin="VCCIO"/>
-<pinref part="IC9" gate="PWR" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="J1" gate="G$1" pin="VCC"/>
 <wire x1="-2.54" y1="55.88" x2="-2.54" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="VCC3" gate="G$1" pin="VCCIO"/>
@@ -27104,6 +27105,10 @@ MIC2288YD5</text>
 <segment>
 <pinref part="C48" gate="G$1" pin="1"/>
 <pinref part="VCC5" gate="G$1" pin="VCCIO"/>
+</segment>
+<segment>
+<pinref part="IC9" gate="P" pin="VCC"/>
+<pinref part="VCC4" gate="G$1" pin="VCCIO"/>
 </segment>
 </net>
 <net name="NRST" class="0">
